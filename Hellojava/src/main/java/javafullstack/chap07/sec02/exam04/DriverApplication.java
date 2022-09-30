@@ -21,7 +21,7 @@ public class DriverApplication {
         Taxi taxi = new Taxi();
 
 //        매개변수의 다형성 : 매개변수값(bus, taxi)에 따라 결과가 달라짐
-        driver.drive(bus);
-        driver.drive(taxi);
+//        driver.drive(bus);
+//        driver.drive(taxi);
     }
 }

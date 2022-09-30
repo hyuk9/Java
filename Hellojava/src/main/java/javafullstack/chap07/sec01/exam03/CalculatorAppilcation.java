@@ -18,11 +18,13 @@ public class CalculatorAppilcation {
 //        반지름 지정
         int r = 10;
 
+//        calculator = 부모함수
         System.out.println("원면적 : " + calculator.areaCircle(r));
 
 //        자식객체 생성
         Computer computer = new Computer();
 //        원의 면적 출력 (재정의된 함수가 실행됨(자식의 함수))
+//        computer = 자식함수
         System.out.println("원면적 : " + computer.areaCircle(r));
 
     }

@@ -20,10 +20,10 @@ public class Computer extends Calculator {
 //                      => ‼️일치하지 않으면 어노테이션 에러 발생(오타 확인)
 //                  3) 부모함수 내용 != 자식함수 내용
 
-//    오버라이딩 함수 : cmd+n 함수 재정의 -> 함수 선택
+    //    오버라이딩 함수 : cmd+n 함수 재정의 -> 함수 선택
     @Override
     double areaCircle(double r) {
         System.out.println("Calculator 객체의 areaCircle() 함수 실행");
-        return Math.PI*r*r;
+        return Math.PI * r * r;
     }
 }
