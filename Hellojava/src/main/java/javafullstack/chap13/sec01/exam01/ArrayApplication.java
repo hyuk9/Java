@@ -43,6 +43,7 @@ public class ArrayApplication {
         List<String> list = new ArrayList<>();
 //        ArrayList<String> list2 = new ArrayList<>(); 👈 이거보단 위에 방식이 향후에 바꿔쓰기 좋음
 
+
 //        개선된 배열 : ArrayList
 //        객체.add(문자열) : 개선된 배열에 자료 생성하는 함수
         list.add("Java");
@@ -59,7 +60,7 @@ public class ArrayApplication {
 
 //        2번째 자료 가져오기
         String skill = list.get(2);
-        System.out.println();
+        System.out.println(skill);
 
 //        ArrayList 안의 자료 모두 출력하기
         for (int i = 0; i < list.size(); i++) {

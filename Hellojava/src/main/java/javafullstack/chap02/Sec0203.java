@@ -37,7 +37,7 @@ public class Sec0203 {
 
 //    exam02
     public void exam02(){
-//        char(2bte) <- int(4byte) ‼️큰 자료형에서 작은 자료형으로의 형변환은 자유롭지 않음‼️
+//        char(2byte) <- int(4byte) ‼️큰 자료형에서 작은 자료형으로의 형변환은 자유롭지 않음‼️
         int intValue = 44032;
 //        char charValue = inValue; <- 이렇게 하면 에러남
 //        캐스팅연산자(형변환연산자) : (바꿀자료형)

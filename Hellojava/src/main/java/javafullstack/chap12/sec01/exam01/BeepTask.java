@@ -27,7 +27,6 @@ public class BeepTask implements Runnable{
             } catch (Exception e){
                 System.out.println();
             }
-
         }
     }
 }

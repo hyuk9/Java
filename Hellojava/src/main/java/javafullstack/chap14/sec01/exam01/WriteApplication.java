@@ -9,6 +9,19 @@ import java.io.OutputStream;
  * author : hyuk
  * date : 2022/10/06
  * description : 1Byte씩 출력하기
+ * 💡 ======================== 요약 ========================= 💡
+ *      ✅ 입출력 스트림(InputStream / OutputStream) : 자바에서는 데이터를 스트림을 통해 입출력됨
+ *      ✅ 읽기용/쓰기용에 따라 사용하는 클래스가 달라짐
+ *      ✅ InputStream : 1byte 기반 입력(==읽기용) 스트림의 최상위 추상 클래스
+ *                     👉 내부적으로 InputStream 상속받은 자식클래스들이 많음
+ *                     ex) 자식클래스 : DataInputStream, BufferedInputStream etc...
+ *      ✅ OutputStream : 1byte 기반 출력(==쓰기용) 스트림의 최상위 추상 클래스
+ *                     👉 내부적으로 OutputStream 상속받은 자식클래스들이 많음
+ *                     ex) 자식클래스 : DataOutputStream, BufferedOutputStream etc...
+ *      ✅ Reader : 문자기반(char:2byte) 입력(==읽기용) 스트림의 최상위 추상 클래스
+ *                     👉 내부적으로 Reader 상속받은 자식클래스들이 많음
+ *      ✅ Writer : 문자기반(char:2byte) 출력(==쓰기용) 스트림의 최상위 추상 클래스
+ *                     👉 내부적으로 Writer 상속받은 자식클래스들이 많음
  * ===========================================================
  * DATE            AUTHOR             NOTE
  * —————————————————————————————

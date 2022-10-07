@@ -1,7 +1,5 @@
 package javafullstack.chap13.sec01.verify.exam08;
 
-import java.util.Objects;
-
 /**
  * packageName : javafullstack.chap13.sec01.verify.exam08
  * fileName : Student
