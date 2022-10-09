@@ -1,6 +1,7 @@
 package javafullstack.chap14.sec02.exam06;
 
 import java.io.*;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -44,9 +45,21 @@ public class ObjectApplication {
 //        보조스트림 : 객체를 파일로 읽을 수 있게 만드는 기능(역직렬화)
 //        사용법 : new 보조스트림(기본스트림)
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-        List<>
+        List<Board> list = (List<Board>) objectInputStream.readObject(); // 객체로 바꾸기(원복)
+        return list;
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
+        writeList(); // 쓰기 공유 함수 객체배열 List 파일에 쓰기
+//        파일에 쓴 것을 읽기
+        List<Board> list = readList(); // 읽기 공유 함수 (역직렬화)
 
+//        화면에 객체 데이터 출력
+//        날짜 포맷 변경
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+
+//        개선된 for문
+        for (Board board : list){
+            System.out.println(board.getBno() + "\t" + board.getTitle() + "\t" + board.getContents() + "\t" + board.getWriter() + "\t" + sdf.format(board.getDate()));
+        }
     }
 }
