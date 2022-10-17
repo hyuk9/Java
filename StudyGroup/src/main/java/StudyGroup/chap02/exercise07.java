@@ -77,7 +77,11 @@ public class exercise07 {
         for (int i = 0; i < VMAX; i++) {
             System.out.print(i/10.0 + " ~: ");
             for (int j = 0; j < vdist[i]; j++) {
-                System.out.print("*");
+                if (vdist[i] == 0){
+                    System.out.print("없음");
+                }else {
+                    System.out.print("*");
+                }
             }
             System.out.println();
         }
