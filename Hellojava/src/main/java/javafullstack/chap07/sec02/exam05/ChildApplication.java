@@ -15,7 +15,6 @@ public class ChildApplication {
     public static void main(String[] args) {
 //        다형성 자동타입 변환
         Parent parent = new Child();
-
         parent.field1 = "data1";
         parent.method1();
         parent.method2();
@@ -30,6 +29,6 @@ public class ChildApplication {
         Child child = (Child) parent; // 강제 형변환
         child.field2 = "data2"; // 자식객체의 고유속성
         child.method3(); // 자식 객체의 고유 함수 호출
-
+        child.method1();
     }
 }

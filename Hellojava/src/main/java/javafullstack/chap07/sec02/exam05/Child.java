@@ -12,6 +12,7 @@ package javafullstack.chap07.sec02.exam05;
  * 2022/09/29         hyuk          최초 생성
  */
 public class Child extends Parent{
+
     public String field2;
 
     public void method3(){

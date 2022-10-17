@@ -1,5 +1,7 @@
 package javafullstack.chap14.sec01.exam01;
 
+import lombok.Getter;
+
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 

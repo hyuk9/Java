@@ -17,7 +17,6 @@ public class SmartTelevison implements RemoteControl, Searchable{
     @Override
     public void turnOn() {
         System.out.println("텔레비전을 켭니다");
-
     }
 
     @Override
@@ -29,10 +28,10 @@ public class SmartTelevison implements RemoteControl, Searchable{
     @Override
     public void setVolumn(int volumn) {
 //        속성 = 매개변수값
-        if (volumn > javafullstack.chap08.sec01.RemoteControl.MAX_VOLUMN){
-            this.volumn = javafullstack.chap08.sec01.RemoteControl.MAX_VOLUMN;
-        } else if (volumn < javafullstack.chap08.sec01.RemoteControl.MIN_VOLUMN){
-            this.volumn = javafullstack.chap08.sec01.RemoteControl.MIN_VOLUMN;
+        if (volumn > MAX_VOLUMN){
+            this.volumn = MAX_VOLUMN;
+        } else if (volumn < javafullstack.chap08.sec01.exam01.RemoteControl.MIN_VOLUMN){
+            this.volumn = javafullstack.chap08.sec01.exam01.RemoteControl.MIN_VOLUMN;
         } else {
             this.volumn = volumn;
         }

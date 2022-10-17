@@ -14,6 +14,7 @@ package javafullstack.chap07.sec02.exam02;
 public class HankookTire extends Tire{
 //    생성자
     public HankookTire(String location, int maxRotation) {
+
         super(location, maxRotation);
     }
 

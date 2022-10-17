@@ -27,7 +27,6 @@ public class ChildApplication {
             System.out.println("method1 - 강제형변환 실패");
         }
     }
-
     public static void main(String[] args) {
 //        자동 형변환 : 다형성
         Parent parent = new Child();
