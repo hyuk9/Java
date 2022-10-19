@@ -1,4 +1,4 @@
-package StudyGroup.chap02;
+package StudyGroup.chap02.arrExam;
 
 import java.util.Scanner;
 
@@ -7,24 +7,25 @@ import java.util.Scanner;
  * fileName : Question2_6
  * author : hyuk
  * date : 2022/10/16
- * description : 실습 2-6
+ * description : 실습 2-6 p.72 ~ p.74
  * ===========================================================
  * DATE            AUTHOR             NOTE
  * —————————————————————————————
  * 2022/10/16         hyuk          최초 생성
  */
-public class Question2_6 {
+public class Question01 {
     static int convertNum(int x, int r, char[] arr){
 //        정수값 x를 r진수로 변환하여 배열 arr에 아래자리부터 넣어 두고 자리수를 반환
         int count = 0; // 변환후의 자리수
-        String dchar = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        String dchar = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // 이건 왜?
 
         do {
-            arr[count++] = dchar.charAt(x % r);
-            x/=r;
-        } while (x != 0);
+//            반복
+            arr[count++] = dchar.charAt(x % r); // 정수값 x를 r로 나눈 나머지를 arr 배열에 저장
+            x /= r;
+        } while (x != 0); // 조건에 안맞으면 다시 반복
 
-        for (int i = 0; i< count/2; i++ ){
+        for (int i = 0; i< count/2; i++ ){ // 배열 arr의 숫자 문자열을 역순으로 정렬
             char t = arr[i];
             arr[i]= arr[count -i-1];
             arr[count -i -1] = t;
@@ -41,18 +42,19 @@ public class Question2_6 {
         char[] cno = new char[32]; // 변환 후 각 자리의 숫자를 넣어두는 문자 배열
 
         System.out.println("10진수를 기수 변환합니다");
-        do {
-            do {
+        do { // 반복
+
+            do { // 반복
                 System.out.print("변환하는 음이 아닌 정수 : ");
                 no = scanner.nextInt();
-            } while (no < 0);
+            } while (no < 0); // 조건에 안맞으면 다시 반복
 
-            do {
+            do { // 반복
                 System.out.print("어떤 진수로 변환할까요? (2 ~ 36) : ");
                 cd = scanner.nextInt();
-            } while (cd < 2 || cd > 36);
+            } while (cd < 2 || cd > 36); // 조건에 안맞으면 다시 반복
 
-            dno = convertNum(no, cd, cno);
+            dno = convertNum(no, cd, cno); // 변환후 자리수를 convertNum함수 호출해서
 
 
             for (int i = 0; i < dno; i++) {
