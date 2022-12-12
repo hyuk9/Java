@@ -1,4 +1,4 @@
-package StudyGroup.chap08;
+package StudyGroup.chap08.Question1;
 
 import java.util.Comparator;
 import java.util.Scanner;
@@ -28,7 +28,6 @@ public class LinkedListTester {
         public String toString() {
             return "(" + no + ") " + name;
         }
-
 
 //        ✅ 데이터 입력받기
         void scanData(String guide, int sw) {
@@ -62,6 +61,7 @@ public class LinkedListTester {
                 return d1.name.compareTo(d2.name);
             }
         }
+
     }
 
     //    ✅ 메뉴 열거형
@@ -77,6 +77,9 @@ public class LinkedListTester {
         NEXT( "선택 노드를 하나 뒤쪽으로 진행"),
         PRINT_CRNT( "선택 노드를 출력"),
         DUMP( "모든 노드를 출력"),
+        PURGE_NO(   "같은 번호의 노드를 삭제"),
+        PURGE_NAME( "같은 이름의 노드를 삭제"),
+        QUESTION1("서로 같은 노드를 찾아 가장 앞쪽의 노드만 남기고 모두 삭제"),
         TERMINATE( "종료");
 
         private final String message; // ➡️ 출력할 문자열
@@ -183,10 +186,19 @@ public class LinkedListTester {
                     list.dump();
                     break;
 
+                case PURGE_NO: // ➡️ 같은 번호의 노드를 삭제
+                    list.purge(Data.NO_ORDER);
+                    break;
+
+                case PURGE_NAME: // ➡️ 같은 이름의 노드를 삭제
+                    list.purge(Data.NAME_ORDER);
+                    break;
+
                 case CLEAR: // ➡️ 모든 노드를 삭제
                     list.clear();
                     break;
             }
         } while (menu != Menu.TERMINATE);
+
     }
 }

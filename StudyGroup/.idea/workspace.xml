@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e1df110-d069-4a2f-8ef0-a1e74f5162d8" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/StudyGroup/chap08/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StudyGroup/chap08/LinkedListTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/StudyGroup/chap08/실습8_2/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/StudyGroup/chap08/실습8_2/LinkedListTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/StudyGroup/chap09/Question01/BinTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StudyGroup/chap08/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StudyGroup/chap08/Question1/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StudyGroup/chap08/LinkedListTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StudyGroup/chap08/Question1/LinkedListTester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,33 +45,37 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/hyuk/VScode_workout/github/Java/StudyGroup/src/main/java/StudyGroup/chap04/Question2/연습문제1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/hyuk/VScode_workout/github/Java/StudyGroup/src/main/java/StudyGroup/chap09",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="StudyGroup.chap03" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/StudyGroup/chap09" />
+      <recent name="$PROJECT_DIR$/src/main/java/StudyGroup/chap08/실습8_2" />
       <recent name="$PROJECT_DIR$/src/main/java/StudyGroup/chap04/Question2/연습문제1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/StudyGroup/chap09" />
+      <recent name="$PROJECT_DIR$/src/main/java/StudyGroup/chap08/Answer" />
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -89,11 +99,11 @@
       </method>
     </configuration>
     <configuration name="LinkedListTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StudyGroup.chap08.LinkedListTester" />
+      <option name="MAIN_CLASS_NAME" value="StudyGroup.chap08.Question1.LinkedListTester" />
       <module name="StudyGroup.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="StudyGroup.chap08.*" />
+          <option name="PATTERN" value="StudyGroup.chap08.Question1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -191,6 +201,10 @@
       <workItem from="1668322601125" duration="6638000" />
       <workItem from="1668329342849" duration="3377000" />
       <workItem from="1668385037486" duration="6000" />
+      <workItem from="1668417953398" duration="5567000" />
+      <workItem from="1668435864476" duration="642000" />
+      <workItem from="1668471070170" duration="5000" />
+      <workItem from="1670239521233" duration="9758000" />
     </task>
     <servers />
   </component>

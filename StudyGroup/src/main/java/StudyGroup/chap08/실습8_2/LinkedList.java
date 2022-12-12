@@ -1,4 +1,4 @@
-package StudyGroup.chap08;
+package StudyGroup.chap08.실습8_2;
 
 import java.util.Comparator;
 
